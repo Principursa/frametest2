@@ -5,32 +5,18 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Tile 1',
+      label: '⬅️',
     },
     {
-      label: 'Tile 2 ',
+      label: '⬆️',
     },
     {
-      label: 'Tile 3',
+      label: '⬇️',
     },
     {
-      label: 'tile 4'
+      label: '️️➡️'
     },
-    {
-      label: 'Tile 5',
-    },
-    {
-      label: 'Tile 6 ',
-    },
-    {
-      label: 'Tile 7',
-    },
-    {
-      label: 'Tile 8'
-    },
-    {
-      label: "Tile 9"
-    }
+
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/park-3.png`,
