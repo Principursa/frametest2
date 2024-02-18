@@ -25,7 +25,7 @@ const frameMetadata = getFrameMetadata({
 
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
+    src: "https://frametest2.vercel.app/",
     aspectRatio: '1:1',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GrandTheftPropy',
     description: 'GTP',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    images: ["https://frametest2.vercel.app/"],
   },
   other: {
     ...frameMetadata,
