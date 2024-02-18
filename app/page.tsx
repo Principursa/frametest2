@@ -5,17 +5,32 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
+      label: 'Tile 1',
     },
     {
-      action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
+      label: 'Tile 2 ',
     },
     {
-      label: 'Redirect to pictures',
-      action: 'post_redirect',
+      label: 'Tile 3',
     },
+    {
+      label: 'tile 4'
+    },
+    {
+      label: 'Tile 5',
+    },
+    {
+      label: 'Tile 6 ',
+    },
+    {
+      label: 'Tile 7',
+    },
+    {
+      label: 'Tile 8'
+    },
+    {
+      label: "Tile 9"
+    }
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/park-3.png`,
