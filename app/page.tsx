@@ -2,6 +2,12 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
 
+let length = 10
+let height = 10
+let gameMap  = Array(height).fill(0).map(() => Array(length).fill(0));
+
+gameMap[height/2][length/2] = 1
+
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
@@ -21,9 +27,6 @@ const frameMetadata = getFrameMetadata({
   image: {
     src: `${NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1:1',
-  },
-  input: {
-    text: 'Tell me a boat story',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
@@ -45,6 +48,27 @@ export default function Page() {
   return (
     <>
       <h1>Grand Theft Propy</h1>
+      {GameState()}
     </>
   );
+}
+
+function GameState() {
+  return(
+
+      <>
+
+        {gameMap.map((element,index)=> (<tr key={index}>{element.map((val,i) => Tiles(val) )}</tr>)) }
+      </>
+
+  )
+}
+
+function Tiles(value: number) {
+  if( value == 1){
+    return(
+    <td>🟥</td>
+    )
+  }
+  else return <td>⬜</td>
 }
