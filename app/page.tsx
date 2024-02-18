@@ -29,11 +29,11 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  title: 'Grand Theft Propy',
+  description: 'GTP',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
+    title: 'GrandTheftPropy',
+    description: 'GTP',
     images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
   other: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>Grand Theft Propy</h1>
     </>
   );
 }
