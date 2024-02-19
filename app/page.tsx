@@ -43,22 +43,14 @@ const svg = await satori(
   {
     width: 600,
     height: 400,
+    fonts: [
+    
+    ],
+
+
   },
+
 )
-
-export const metadata: Metadata = {
-  title: 'GrandTheftPropy',
-  description: 'GTP',
-  openGraph: {
-    title: 'GrandTheftPropy',
-    description: 'GTP',
-    images: [svg],
-  },
-  other: {
-    ...frameMetadata,
-  },
-};
-
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
@@ -81,3 +73,17 @@ const frameMetadata = getFrameMetadata({
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
+
+export const metadata: Metadata = {
+  title: 'GrandTheftPropy',
+  description: 'GTP',
+  openGraph: {
+    title: 'GrandTheftPropy',
+    description: 'GTP',
+    images: [svg],
+  },
+  other: {
+    ...frameMetadata,
+  },
+};
+
