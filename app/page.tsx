@@ -2,7 +2,7 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
 import satori from "satori"
-const roboto = fetch("./Roboto-Medium.ttf").then((res) => res.arrayBuffer());
+const roboto = fetch("/Roboto-Medium.ttf").then((res) => res.arrayBuffer());
 
 let length = 10
 let height = 10
