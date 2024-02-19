@@ -2,6 +2,7 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
 import satori from "satori"
+const roboto = fetch("../public/Roboto-Medium.ttf").then((res) => res.arrayBuffer());
 
 let length = 10
 let height = 10
@@ -40,16 +41,17 @@ function Tiles(value: number) {
 }
 const svg = await satori(
   <div style={{ color: 'black' }}>hello, world</div>,
-  {
-    width: 600,
-    height: 400,
-    fonts: [
-    
-    ],
-
-
-  },
-
+{
+      width: 400,
+      height: 400,
+      fonts: [
+        {
+          name: "Roboto",
+          data: await roboto
+        }
+      ]
+    }
+ 
 )
 const frameMetadata = getFrameMetadata({
   buttons: [
